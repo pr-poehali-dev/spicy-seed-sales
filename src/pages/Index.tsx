@@ -138,7 +138,7 @@ export default function Index() {
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Icon name="Flame" className="text-primary" size={32} />
-            <h1 className="text-2xl font-bold text-primary">ПерецМаркет</h1>
+            <h1 className="text-2xl font-bold text-primary">Pepper Garden</h1>
           </div>
           <nav className="hidden md:flex gap-6">
             <a href="#home" className="hover:text-primary transition-colors">Главная</a>
@@ -449,9 +449,9 @@ export default function Index() {
         <div className="container mx-auto px-4 text-center">
           <div className="flex items-center justify-center gap-2 mb-4">
             <Icon name="Flame" size={24} />
-            <span className="text-xl font-bold">ПерецМаркет</span>
+            <span className="text-xl font-bold">Pepper Garden</span>
           </div>
-          <p className="text-sm opacity-80">© 2026 ПерецМаркет. Все права защищены.</p>
+          <p className="text-sm opacity-80">© 2026 Pepper Garden. Все права защищены.</p>
         </div>
       </footer>
     </div>
