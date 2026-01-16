@@ -24,57 +24,111 @@ interface CartItem extends Product {
 const products: Product[] = [
   {
     id: 1,
-    name: 'Каролина Рипер',
-    description: 'Самый острый перец в мире',
-    price: 450,
-    image: 'https://cdn.poehali.dev/projects/2dad60ae-a8c2-4d90-a243-3e96f46a0ecc/files/4c98f49e-39d0-49a2-9418-857025c1e4af.jpg',
-    heatLevel: 5,
-    category: 'Супер острые'
+    name: 'Болгарский перец',
+    description: 'Сладкий, без остроты',
+    price: 120,
+    image: 'https://cdn.poehali.dev/projects/2dad60ae-a8c2-4d90-a243-3e96f46a0ecc/files/9698a84f-93f9-44a3-b812-55bcece2275d.jpg',
+    heatLevel: 0,
+    category: 'Слабоострые'
   },
   {
     id: 2,
-    name: 'Хабанеро Оранжевый',
-    description: 'Классический жгучий вкус',
-    price: 320,
-    image: 'https://cdn.poehali.dev/projects/2dad60ae-a8c2-4d90-a243-3e96f46a0ecc/files/9698a84f-93f9-44a3-b812-55bcece2275d.jpg',
-    heatLevel: 4,
-    category: 'Острые'
+    name: 'Пепперончини',
+    description: 'Лёгкая приятная острота',
+    price: 150,
+    image: 'https://cdn.poehali.dev/projects/2dad60ae-a8c2-4d90-a243-3e96f46a0ecc/files/43c91280-82ee-41bc-a252-2be6912ed2a1.jpg',
+    heatLevel: 1,
+    category: 'Слабоострые'
   },
   {
     id: 3,
+    name: 'Халапеньо',
+    description: 'Классика для начинающих',
+    price: 180,
+    image: 'https://cdn.poehali.dev/projects/2dad60ae-a8c2-4d90-a243-3e96f46a0ecc/files/4c98f49e-39d0-49a2-9418-857025c1e4af.jpg',
+    heatLevel: 2,
+    category: 'Среднеострые'
+  },
+  {
+    id: 4,
+    name: 'Серрано',
+    description: 'Яркий вкус и умеренная острота',
+    price: 210,
+    image: 'https://cdn.poehali.dev/projects/2dad60ae-a8c2-4d90-a243-3e96f46a0ecc/files/9698a84f-93f9-44a3-b812-55bcece2275d.jpg',
+    heatLevel: 2,
+    category: 'Среднеострые'
+  },
+  {
+    id: 5,
+    name: 'Кайенский перец',
+    description: 'Интенсивная острота',
+    price: 240,
+    image: 'https://cdn.poehali.dev/projects/2dad60ae-a8c2-4d90-a243-3e96f46a0ecc/files/4c98f49e-39d0-49a2-9418-857025c1e4af.jpg',
+    heatLevel: 3,
+    category: 'Острые'
+  },
+  {
+    id: 6,
+    name: 'Тайский перец',
+    description: 'Мощный жар',
+    price: 270,
+    image: 'https://cdn.poehali.dev/projects/2dad60ae-a8c2-4d90-a243-3e96f46a0ecc/files/43c91280-82ee-41bc-a252-2be6912ed2a1.jpg',
+    heatLevel: 3,
+    category: 'Острые'
+  },
+  {
+    id: 7,
+    name: 'Хабанеро Оранжевый',
+    description: 'Классический жгучий удар',
+    price: 320,
+    image: 'https://cdn.poehali.dev/projects/2dad60ae-a8c2-4d90-a243-3e96f46a0ecc/files/9698a84f-93f9-44a3-b812-55bcece2275d.jpg',
+    heatLevel: 4,
+    category: 'Очень острые'
+  },
+  {
+    id: 8,
+    name: 'Скотч Боннет',
+    description: 'Карибская ярость',
+    price: 340,
+    image: 'https://cdn.poehali.dev/projects/2dad60ae-a8c2-4d90-a243-3e96f46a0ecc/files/4c98f49e-39d0-49a2-9418-857025c1e4af.jpg',
+    heatLevel: 4,
+    category: 'Очень острые'
+  },
+  {
+    id: 9,
     name: 'Призрачный перец',
     description: 'Легендарная острота',
     price: 380,
     image: 'https://cdn.poehali.dev/projects/2dad60ae-a8c2-4d90-a243-3e96f46a0ecc/files/43c91280-82ee-41bc-a252-2be6912ed2a1.jpg',
     heatLevel: 5,
-    category: 'Супер острые'
+    category: 'Запредельные'
   },
   {
-    id: 4,
-    name: 'Халапеньо',
-    description: 'Мягкая острота для начинающих',
-    price: 180,
-    image: 'https://cdn.poehali.dev/projects/2dad60ae-a8c2-4d90-a243-3e96f46a0ecc/files/4c98f49e-39d0-49a2-9418-857025c1e4af.jpg',
-    heatLevel: 2,
-    category: 'Средние'
-  },
-  {
-    id: 5,
-    name: 'Скотч Боннет',
-    description: 'Карибская острота',
-    price: 340,
+    id: 10,
+    name: 'Тринидад Скорпион',
+    description: 'Жало скорпиона',
+    price: 420,
     image: 'https://cdn.poehali.dev/projects/2dad60ae-a8c2-4d90-a243-3e96f46a0ecc/files/9698a84f-93f9-44a3-b812-55bcece2275d.jpg',
-    heatLevel: 4,
-    category: 'Острые'
+    heatLevel: 5,
+    category: 'Запредельные'
   },
   {
-    id: 6,
-    name: 'Серрано',
-    description: 'Яркий вкус и умеренная острота',
-    price: 210,
+    id: 11,
+    name: 'Каролина Рипер',
+    description: 'Чемпион мира по остроте',
+    price: 450,
+    image: 'https://cdn.poehali.dev/projects/2dad60ae-a8c2-4d90-a243-3e96f46a0ecc/files/4c98f49e-39d0-49a2-9418-857025c1e4af.jpg',
+    heatLevel: 6,
+    category: 'Рекордные'
+  },
+  {
+    id: 12,
+    name: 'Pepper X',
+    description: 'Абсолютный рекордсмен',
+    price: 500,
     image: 'https://cdn.poehali.dev/projects/2dad60ae-a8c2-4d90-a243-3e96f46a0ecc/files/43c91280-82ee-41bc-a252-2be6912ed2a1.jpg',
-    heatLevel: 3,
-    category: 'Средние'
+    heatLevel: 6,
+    category: 'Рекордные'
   }
 ];
 
@@ -94,6 +148,13 @@ export default function Index() {
   const [cart, setCart] = useState<CartItem[]>([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [orderForm, setOrderForm] = useState({ name: '', phone: '', address: '', comment: '' });
+  const [selectedCategory, setSelectedCategory] = useState<string>('Все');
+
+  const categories = ['Все', 'Слабоострые', 'Среднеострые', 'Острые', 'Очень острые', 'Запредельные', 'Рекордные'];
+
+  const filteredProducts = selectedCategory === 'Все' 
+    ? products 
+    : products.filter(p => p.category === selectedCategory);
 
   const addToCart = (product: Product) => {
     setCart(prev => {
@@ -271,12 +332,29 @@ export default function Index() {
 
       <section id="catalog" className="py-20 relative">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-secondary to-primary">Каталог семян</h2>
             <p className="text-foreground/70">Выберите идеальный сорт для вашего сада</p>
           </div>
+          
+          <div className="flex flex-wrap justify-center gap-3 mb-12">
+            {categories.map(cat => (
+              <Button
+                key={cat}
+                variant={selectedCategory === cat ? "default" : "outline"}
+                onClick={() => setSelectedCategory(cat)}
+                className={selectedCategory === cat 
+                  ? "shadow-neon hover:shadow-neon-purple transition-all" 
+                  : "border-primary/30 hover:border-primary/60 hover:shadow-neon transition-all"
+                }
+              >
+                {cat}
+              </Button>
+            ))}
+          </div>
+
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {products.map(product => (
+            {filteredProducts.map(product => (
               <Card key={product.id} className="group hover:shadow-neon-purple transition-all duration-300 hover:-translate-y-2 border-primary/20 hover:border-primary/50 bg-card/50 backdrop-blur-sm relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 <CardHeader className="p-0 relative">
@@ -293,12 +371,12 @@ export default function Index() {
                   </div>
                   <CardDescription className="mb-3">{product.description}</CardDescription>
                   <div className="flex items-center gap-1 mb-3">
-                    {Array.from({ length: 5 }).map((_, i) => (
+                    {Array.from({ length: 6 }).map((_, i) => (
                       <Icon 
                         key={i} 
                         name="Flame" 
                         size={16} 
-                        className={i < product.heatLevel ? 'text-primary' : 'text-muted'} 
+                        className={i < product.heatLevel ? 'text-primary' : 'text-muted/30'} 
                       />
                     ))}
                     <span className="text-sm text-muted-foreground ml-2">Острота</span>
